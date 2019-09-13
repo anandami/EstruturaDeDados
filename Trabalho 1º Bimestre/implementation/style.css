@@ -1,0 +1,26 @@
+.tit {
+    text-align:center;
+}
+.sub-tit{
+    text-align:left;
+}
+
+table {
+    margin:0px auto;
+    border:1px solid black;
+
+}
+
+table tr td {
+    border:1px dashed black;
+    padding:20px;
+}
+
+.tableContent{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+    height: 360px;
+    width: 100%;
+    margin: 0px auto;
+}
