@@ -47,15 +47,19 @@ function somaIndice(){
 function calcModa(){
    var repete = [];
    var cont = 0;
-   for (var i = 0; i < vet.length; i++){
-      for (var j = 0; j < vet.length; j++){
+   for (var i = 0; i < vet.length-1; i++){
+      for (var j = 0; j < vet.length-1; j++){
          if (vet[i]==vet[j] && i != j){
             cont++;
             repete.push(vet[i]);            
+         }
+         else{
+            alert("Os números inseridos não têm repetição")
          }   
       }
-   
    }
+   for (var i = 0; i < vet.length-1; i++){
+      
    document.getElementById("resModa").innerHTML = repete;
 }
 

@@ -20,6 +20,25 @@
         </ul>
     </div>
     <div>
+        <table>
+            <p>VALORES GERADOS ATÉ O MOMENTO : <span id="varr"></span></p>
+            <ul>
+                <tr>
+                <td><li>Gerar 100 valores aleatórios</td><td><button id="b_100"  onclick="aleatorio100()">Start</button></li></td>
+                </tr>
+                <tr>
+                <td><li>Gerar 1.000 valores aleatórios</td><td><button id="b_1000"  onclick="aleatorio1000()">Start</button></li></td>
+                </tr>
+                <tr>
+                <td><li>Gerar 10.000 valores aleatórios</td><td><button id="b_10000"  onclick="aleatorio10000()">Start</button></li></td>
+                </tr>
+                <tr>
+                <td><li>Gerar 100.000 valores aleatórios</td><td><button id="b_100000"  onclick="aleatorio100000()">Start</button></li></td>
+                </tr>
+            </ul>
+        </table>
+    </div>
+    <div>
         <h4 class="tit">Tabela de Testes</h4>
         <div class="tableContent">     
             <table>
@@ -30,11 +49,9 @@
                     <th>Tempo de execução</th>
                 </thead>
                 <tbody id="tb-teste">
-
                 </tbody>
             </table>
         </div>
-
     </div>
 
 <script type="text/javascript" src="script.js"></script>

@@ -44,11 +44,12 @@ function quickSort(arr,left,right){
         quickSort(arr, i, right);
     }
 }
-
+//corrigido - jeito correto de chamar uma função com parametros 
 function chamar (){
     var arr = [25,57,48,37,12,92,86,33,99,145,1];
     quickSort(arr, 0, arr.length-1);
     console.log(arr);
+    document.getElementById("resp").innerHTML = arr;
 }
 
 

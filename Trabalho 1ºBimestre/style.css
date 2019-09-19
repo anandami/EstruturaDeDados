@@ -5,6 +5,15 @@
     text-align:left;
 }
 
+.tableContent{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+    height: 360px;
+    width: 100%;
+    margin: 0px auto;
+}
+
 table {
     margin:0px auto;
     border:1px solid black;
@@ -16,11 +25,3 @@ table tr td {
     padding:20px;
 }
 
-.tableContent{
-    overflow-x: hidden;
-    overflow-y: scroll;
-    white-space: nowrap;
-    height: 360px;
-    width: 100%;
-    margin: 0px auto;
-}

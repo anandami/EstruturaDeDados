@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios de Recursão - Estrutura de Dados</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h3>FIBONACCI</h3>
+    <div>
+        <p>Insira o valor da sequencia fibonacci que deseja calcular</p>
+        <input type="number" id="num"/>
+        <p><button onclick="fibonacci_call()">Executar</button></p>
+        <p>Resultado de Fibonacci: </p><span id="resp"></span>
+    </div>
+    <script>
+    function fibonacci(N){
+      if(N>0 && N<=2){
+        return 1;
+      }
+      else{
+        return (fibonacci(N-1) + fibonacci(N-2));
+      }    
+    }
+	  
+    function fibonacci_call(){
+   		number = document.getElementById("num").value;
+   		var result = fibonacci(number);
+   		document.getElementById("resp").innerHTML = result;
+   	}
+    </script>
+</body>
+</html>

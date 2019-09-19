@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios de Recursão - Estrutura de Dados</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h3>POTENCIAÇÃO</h3>
+    <div>
+        <p>Insira o valor que deseja calcular: </p>
+        <p>Base: </p>
+        <input type="number" id="base"/>
+        <p>Expoente: </p>
+        <input type="number" id="exp"/>
+        <p><button onclick="entrada()">Entrada</button></p>
+        <p>Resultado: </p><span id="resp"></span>
+    </div>
+    <script>
+    //entrada de dados
+    function entrada() {
+        var base = Number(document.getElementById("base").value);
+        var exp = Number(document.getElementById("exp").value);
+        var resp = pow(base,exp);
+        console.log(base);
+        console.log(exp);
+        console.log(resp);
+        document.getElementById("resp").innerText = ("O resultado da potenciaçao sera " + resp);
+    }
+    
+    function pow(base,exp){
+      if (exp == 0){
+        return 1;
+      }
+      else{
+       return base * pow(base,exp-1);
+      }
+    }
+    
+    </script>
+</body>
+</html>

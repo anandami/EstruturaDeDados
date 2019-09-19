@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios de Recursão - Estrutura de Dados</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h3>MODA</h3>
+    <div>
+        <p>Insira os valores desejados separando-os por espaço: </p>
+        <input type="text" id="numString"/>
+        <p><button onclick="entrada()">Entrada</button></p>
+        <p>Valores incluídos: </p><span id="valores"></span>
+        <p>Moda: </p><span id="resp"></span>
+    </div>
+    <script>
+    //entrada de dados
+    function entrada() {
+      var arr = []
+   	  var numString = document.getElementById("numString").value;
+      arr.push(numString.split(' ').map(parseFloat));
+      document.getElementById("valores").innerHTML = arr;
+      console.log(arr);
+      console.log(numString);
+	  }
+    //cálculo da moda
+	function moda(arr){
+        var repeticao = [], pos = [], cont = 0, fim = [];
+        for (var i = 0; i < arr.length-1; i++){
+            for (var j = 0; j<arr.length-1; j++){
+                if(arr[i]==arr[j]){
+                    cont++;
+                }
+            }
+        }
+        if(cont>1){
+            pos.push(i)
+        }
+        var cont = 0;
+        console.log(repeticao);
+   	}
+    </script>
+</body>
+</html>

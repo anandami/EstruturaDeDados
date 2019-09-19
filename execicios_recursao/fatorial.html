@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios de Recursão - Estrutura de Dados</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h3>FATORIAL</h3>
+    <div>
+        <p>Insira o valor do fatorial que deseja calcular</p>
+        <input type="number" id="num"/>
+        <p><button onclick="factorial_call()">Executar</button></p>
+        <p>Resultado do fatorial: </p><span id="resp"></span>
+    </div>
+    <script>
+    function fatorial(num) {
+   		if (num < 0) {
+      		return -1;
+   		}
+   		else if (num == 0) {
+      		return 1;
+   		}
+   		else {
+      		return (num * fatorial(num - 1));
+   		}
+	}
+
+	function factorial_call(){
+   		number = document.getElementById("num").value;
+   		var result = fatorial(number);
+   		document.getElementById("resp").innerHTML = result;
+   	}
+    </script>
+</body>
+</html>
